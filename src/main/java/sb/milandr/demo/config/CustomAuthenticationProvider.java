@@ -28,6 +28,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     }
 
+    //Получить пользователя в программе:
+    //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    //String currentPrincipalName = authentication.getName();
+
     @Override
     public boolean supports(Class<?> authentication) {
         return authentication.equals(UsernamePasswordAuthenticationToken.class);
